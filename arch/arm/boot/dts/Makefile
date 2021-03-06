@@ -487,6 +487,7 @@ dtb-$(CONFIG_SOC_IMX6Q) += \
 	imx6q-ccimx6sbc-w.dtb \
 	imx6q-ccimx6sbc-wb.dtb \
 	imx6q-ccimx6sbc-wb-ldo-bypass.dtb \
+	imx6q-qctech.dtb \
 	imx6q-cm-fx6.dtb \
 	imx6q-cubox-i.dtb \
 	imx6q-cubox-i-emmc-som-v15.dtb \
