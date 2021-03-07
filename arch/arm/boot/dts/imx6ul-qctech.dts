@@ -23,7 +23,7 @@
         model = "QCTech ConnectCore 6 platform";
         compatible = "digi,ccimx6", "fsl,imx6q";
         digi,machine,name = "qctech";
-}
+};
 
 /*
  * Uncomment to enable the i.MX6UL SoC ADCs on the GPIO connector:
