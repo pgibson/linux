@@ -19,12 +19,6 @@
 /* ConnectCore 6UL SBC */
 #include "imx6ul-ccimx6ulsbc.dtsi"
 
-/ {
-        model = "QCTech ConnectCore 6 platform";
-        compatible = "digi,ccimx6", "fsl,imx6q";
-        digi,machine,name = "qctech";
-};
-
 /*
  * Uncomment to enable the i.MX6UL SoC ADCs on the GPIO connector:
  *  - EXP_GPIO_1 (channel 5)
