@@ -226,8 +226,7 @@
 /* UART2 */
 &uart2 {
 	/* RTS/CTS lines multiplexed with CAN2 */
-	pinctrl-0 = <&pinctrl_uart2_4wires>;
-	uart-has-rtscts;
+	pinctrl-0 = <&pinctrl_uart2_2wires>;
 	status = "okay";
 };
 
@@ -309,6 +308,14 @@
 				/* EXP_GPIO_3, configured on 'pinctrl_adc1' */
 		//		MX6UL_PAD_GPIO1_IO02__GPIO1_IO02	0x1b0b0
 			>;
+		};
+
+                /* General purpose pinctrl */
+                pinctrl_hog: hoggrp {
+                        fsl,pins = <
+                                MX6UL_PAD_UART2_CTS_B__GPIO1_IO22      0x1b0b0
+				MX6UL_PAD_UART2_RTS_B__GPIO1_IO23      0x1b0b0
+                        >;
 		};
 	};
 };
