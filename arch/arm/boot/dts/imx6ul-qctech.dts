@@ -228,7 +228,7 @@
 	/* RTS/CTS lines multiplexed with CAN2 */
 	pinctrl-0 = <&pinctrl_uart2_2wires>;
 	status = "okay";
-        rts-gpio = <&gpio1 23 GPIO_ACTIVE_HIGH>;    /* Specify the GPIO to direction control */
+        rts-gpio = <&gpio1 22 GPIO_ACTIVE_HIGH>;    /* Specify the GPIO to direction control */
         rs485-rts-active-high;                      /* Is the GPIO Active High */
         rs485-rts-delay = <0 0>;                    /* Rise/Lower time delay on direction */
         linux,rs485-enabled-at-boot-time;
