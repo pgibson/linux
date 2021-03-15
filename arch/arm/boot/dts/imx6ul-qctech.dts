@@ -226,12 +226,13 @@
 /* UART2 */
 &uart2 {
 	/* RTS/CTS lines multiplexed with CAN2 */
-	pinctrl-0 = <&pinctrl_uart2_2wires>;
+	pinctrl-0 = <&pinctrl_uart2_4wires>;
 	status = "okay";
-        rts-gpio = <&gpio1 22 GPIO_ACTIVE_HIGH>;    /* Specify the GPIO to direction control */
-        rs485-rts-active-high;                      /* Is the GPIO Active High */
-        rs485-rts-delay = <0 0>;                    /* Rise/Lower time delay on direction */
-        linux,rs485-enabled-at-boot-time;
+	uart-has-rtscts;
+//        rts-gpio = <&gpio1 22 GPIO_ACTIVE_HIGH>;    /* Specify the GPIO to direction control */
+//        rs485-rts-active-high;                      /* Is the GPIO Active High */
+//        rs485-rts-delay = <0 0>;                    /* Rise/Lower time delay on direction */
+//        linux,rs485-enabled-at-boot-time;
 };
 
 /* UART3 */
@@ -311,8 +312,8 @@
 				MX6UL_PAD_GPIO1_IO03__GPIO1_IO03	0x1b0b0
 				/* EXP_GPIO_3, configured on 'pinctrl_adc1' */
 		//		MX6UL_PAD_GPIO1_IO02__GPIO1_IO02	0x1b0b0
-                                MX6UL_PAD_UART2_CTS_B__GPIO1_IO22      0x1b0b0
-                                MX6UL_PAD_UART2_RTS_B__GPIO1_IO23      0x1b0b0
+//                                MX6UL_PAD_UART2_CTS_B__GPIO1_IO22      0x1b0b0
+//                                MX6UL_PAD_UART2_RTS_B__GPIO1_IO23      0x1b0b0
 			>;
 		};
 	};
