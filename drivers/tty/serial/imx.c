@@ -676,7 +676,7 @@ static void imx_uart_start_tx(struct uart_port *port)
 
 	if (port->rs485.flags & SER_RS485_ENABLED) {
 		u32 ucr2;
-
+printk("imx_uart_start_tx SER_RS485_ENABLED\n");
 		ucr2 = imx_uart_readl(sport, UCR2);
 		if (port->rs485.flags & SER_RS485_RTS_ON_SEND) {
 			printk("rts active\n");
