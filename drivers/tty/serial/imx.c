@@ -678,12 +678,15 @@ static void imx_uart_start_tx(struct uart_port *port)
 		u32 ucr2;
 
 		ucr2 = imx_uart_readl(sport, UCR2);
-		if (port->rs485.flags & SER_RS485_RTS_ON_SEND)
+		if (port->rs485.flags & SER_RS485_RTS_ON_SEND) {
 			printk("rts active\n");
 			imx_uart_rts_active(sport, &ucr2);
+		}
 		else
+		{
 			printk("rts_inactive\n");
 			imx_uart_rts_inactive(sport, &ucr2);
+		}
 		imx_uart_writel(sport, ucr2, UCR2);
 
 		if (!(port->rs485.flags & SER_RS485_RX_DURING_TX))
