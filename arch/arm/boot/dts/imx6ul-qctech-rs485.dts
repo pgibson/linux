@@ -227,9 +227,9 @@
         /* RTS/CTS lines multiplexed with CAN2 */
         pinctrl-0 = <&pinctrl_uart2_4wires>;
         uart-has-rtscts;
-//        rs485-rts-active-high;                      /* Is the GPIO Active High */
-//        rs485-rts-delay = <0 0>;                    /* Rise/Lower time delay on direction */
-//        linux,rs485-enabled-at-boot-time;           /* Enabled on Boot */
+        rs485-rts-active-high;                      /* Is the GPIO Active High */
+        rs485-rts-delay = <0 0>;                    /* Rise/Lower time delay on direction */
+        linux,rs485-enabled-at-boot-time;           /* Enabled on Boot */
         status = "okay";
 };
 
