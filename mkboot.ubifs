@@ -1,0 +1,11 @@
+#!/bin/sh
+TMP_BOOTDIR=boot
+rm -rf ${TMP_BOOTDIR}
+mkdir -p ${TMP_BOOTDIR}
+cp boot.scr ${TMP_BOOTDIR}
+cp arch/arm/boot/dts/imx6ul-qctech.dtb ${TMP_BOOTDIR}
+cp arch/arm/boot/zImage ${TMP_BOOTDIR}/zImage-qctech.bin
+
+mkfs.ubifs -r ${TMP_BOOTDIR} -o core-image-base-qctech.ubifs -m 2048 -e 126976 -c 255
+
+
