@@ -487,7 +487,6 @@ dtb-$(CONFIG_SOC_IMX6Q) += \
 	imx6q-ccimx6sbc-w.dtb \
 	imx6q-ccimx6sbc-wb.dtb \
 	imx6q-ccimx6sbc-wb-ldo-bypass.dtb \
-	imx6q-qctech.dtb \
 	imx6q-cm-fx6.dtb \
 	imx6q-cubox-i.dtb \
 	imx6q-cubox-i-emmc-som-v15.dtb \
@@ -679,7 +678,8 @@ dtb-$(CONFIG_SOC_IMX6UL) += \
 	imx6ulz-14x14-evk.dtb \
 	imx6ulz-14x14-evk-btwifi.dtb \
 	imx6ulz-14x14-evk-gpmi-weim.dtb \
-	imx6ulz-14x14-evk-emmc.dtb
+	imx6ulz-14x14-evk-emmc.dtb \
+	imx6ul-qctech.dtb 
 dtb-$(CONFIG_SOC_IMX7D) += \
 	imx7d-cl-som-imx7.dtb \
 	imx7d-colibri-emmc-eval-v3.dtb \
